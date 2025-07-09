@@ -1,0 +1,16 @@
+*{
+    color:chartreuse;
+}
+#one{
+    color:bisque
+}
+button{
+    color:aliceblue; 
+    background-color:rgb(34, 94, 151)
+}
+body{
+    background-color: aqua
+}  
+.myclass{
+    color:black
+} 

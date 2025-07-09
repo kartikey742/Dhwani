@@ -1,0 +1,13 @@
+div{
+    height:200px;
+    width: 200px;
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.0_yGb353J_SPSma7_uTmzQHaEK&pid=Api&P=0&h=180");
+    background-size: cover;
+    position: sticky;
+    right:100px;
+    top:0px
+    
+}
+body{
+    font-size: larger;
+}

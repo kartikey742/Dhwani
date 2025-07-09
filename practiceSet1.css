@@ -1,0 +1,39 @@
+#one{
+    background-color: darkkhaki;
+    font-family: fantasy;
+font-size: larger;
+}
+
+#two{
+        background-color:greenyellow;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:larger;
+    }
+
+.heading{
+    color:crimson;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+button{
+    color:green;
+}
+button:hover{
+    background-color: black;
+    
+}
+body{
+    background-color:rgb(182, 230, 241);
+}                           
+div{
+    text-align: center;
+}
+#box{
+    color:darkblue
+}
+h1{
+    font-weight:900;
+    
+    
+}

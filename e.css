@@ -1,0 +1,33 @@
+/* #inner{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+#outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+} */
+#inner{
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    position: relative;
+    /* left: 50px; */
+    top:100px;
+    margin: auto;
+
+}
+#outer{
+    height: 200px;
+    width: 200px;
+    border-color: black;
+border-style: solid;
+ position: relative; 
+/* top:100px;  */
+    
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .out{
+            height: 80vh;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .in{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 20px solid yellow;
+            border-top:  20px solid green;
+            animation:a 1s linear alternate-reverse infinite, t 1s linear infinite ;
+
+        }
+        @keyframes t {
+            from{
+
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+         @keyframes a {
+            0%{
+
+            }
+            25%{
+                border-top-color: chocolate;
+            }
+            50%{
+                border-top-color:fuchsia;
+            }
+            75%{
+                border-top-color: indigo;
+            }
+            100%{
+                border-top-color:black;
+            }
+                
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="out"><div class="in"></div></div>
+</body>
+</html>

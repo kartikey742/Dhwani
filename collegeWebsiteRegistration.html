@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="collegeWebsite.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table border>
+
+    <tr style="background-color: rgb(112, 224, 0);">
+        <th ><img src="https://tse4.mm.bing.net/th?id=OIP.EqA-mBrtu3GyBK6ON1iwAQHaHb&pid=Api&P=0&h=180" alt="college image" ></th>
+        <th colspan="4"><a id="four" href="https://www.akgec.ac.in/">Ajay Kumar Garg Engineering College</a></th>
+    </tr>
+    <tr style="background-color: rgb(112, 224, 0,0.5);">
+    <td id="smallHome"><a id="home" href="collegeWebsite.html"> Home</a></td>
+    <td id="two"><a id="three" href="collegeWebsiteLogin.html">Login</a></td>
+    <td id="smallRegistration" style="background-color: rgb(0, 114, 0); color: white;">Registration</td>
+    <td  id="two"><a id="three" href="collegeWebsiteCatalogue.html">Catalogue</td>
+    <td id="smallCart">Cart</td>
+    </tr>
+    <tr><td>CSE</td>
+    <td rowspan="4" colspan="4" >
+        <form action="p">
+        <input type="text" placeholder="NAME"><br>
+        <input type="email" placeholder="EMAIL ID"><br>
+        <input type="password" placeholder="PASSWORD"><br>
+        <input type="tel" placeholder="PHONE NUMBER"><br>
+       <span> GENDER: <input type="radio" name="gender">MALE  <input type="radio" name="gender">FEMALE  <input type="radio" name="gender">OTHER</span> <br>
+      <input type="date"> <br>
+     <span> LANGUAGE:   <input type="checkbox" id="language">TAMIL   <input type="checkbox" id="language">HINDI  <input type="checkbox" id="language">ENGLISH   <input type="checkbox" id="language">TAMIL</span> <br>
+     <input type="text" placeholder="ADDRESS"><br>
+     <button>SUBMIT</button>
+    </form>
+    </td></tr>
+    <tr><td>ECE</td></tr>
+    <tr><td>EEE</td></tr>
+    <tr><td>CIVIL</td></tr>
+    
+</table>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="collegeWebsite.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var password = document.getElementById("password").value.trim();
+            var phone = document.getElementById("phone").value.trim();
+
+            // Validate Name
+            if (name.length < 6 || !/^[a-zA-Z]+$/.test(name)) {
+                alert("Name should be at least 6 characters long and contain alphabets only.");
+                return false;
+            }
+
+            // Validate Email
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Validate Password
+            if (password.length < 6) {
+                alert("Password should be at least 6 characters long.");
+                return false;
+            }
+
+            // Validate Phone Number
+            var phonePattern = /^\d{10}$/;
+            if (!phonePattern.test(phone)) {
+                alert("Phone number should contain 10 digits only.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <table border>
+        <!-- College and navigation rows -->
+    </table>
+    <form action="p" onsubmit="return validateForm()">
+        <!-- Registration form fields -->
+        <input type="text" id="name" placeholder="Name"><br>
+        <input type="email" id="email" placeholder="Email"><br>
+        <input type="password" id="password" placeholder="Password"><br>
+        <input type="tel" id="phone" placeholder="Phone Number"><br>
+        <!-- Other form fields -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

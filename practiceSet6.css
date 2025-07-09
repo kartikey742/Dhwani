@@ -1,0 +1,22 @@
+div{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border:solid rgb(17, 255, 0);
+    border-top: solid yellow;
+    
+    border-width: 20px;
+    margin-top: 250px;
+    animation: a;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+body{
+    text-align: center;
+}
+@keyframes a{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}

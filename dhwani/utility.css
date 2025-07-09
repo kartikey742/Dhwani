@@ -1,0 +1,14 @@
+.flex{
+    
+    display: flex;
+}
+.align-items{
+   align-items: center;
+}
+.justify{
+    justify-content: center;
+}
+.border{
+   border:  2px solid black;
+   margin: 3px;
+}

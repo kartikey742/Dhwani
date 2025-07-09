@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            *{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: gray;
+        }
+       .nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+            background-color: black;
+            height: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .box{
+            
+            height: 150px;
+            width: 200px;
+            border: 2px dotted aqua;
+        }
+        .boxes{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: xx-large;
+            font-weight: 100;
+            color: chartreuse;
+        }
+        h1{
+            background-color: antiquewhite;
+            height: 50px;
+        }
+        @media(max-width:681px){
+            h1{
+                height: 75px;
+            }
+        }
+        @media(max-width:547px){
+
+            .boxes{
+                display: flex;
+            flex-direction:column;
+            align-items: center;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="">Home</a>
+        <a href="">About </a>
+        <a href="">Contact Us</a>
+        <a href="">Sevices</a>
+    </div>
+    <h1>We provide services under the following headings</h1>
+    <br><br>
+    <div class="boxes">
+        <div class="box">Buying and selling of land</div>
+        <div class="box">Home decor</div>
+        <div class="box">Real estate</div>
+        <div class="box">Brokerage</div>
+    </div>
+
+</body>
+</html>
